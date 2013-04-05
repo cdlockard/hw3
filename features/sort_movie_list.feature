@@ -32,7 +32,6 @@ Scenario: sort movies alphabetically
   And I should see "The Help" before "The Incredibles"
   And I should see "The Incredibles" before "The Terminator"
   And I should see "2001: A Space Odyssey" before "Aladdin"
-  # your steps here
 
 Scenario: sort movies in increasing order of release date
   When I follow "Release Date"
@@ -46,5 +45,4 @@ Scenario: sort movies in increasing order of release date
   And I should see "Chocolat" before "Amelie"
   And I should see "Amelie" before "The Incredibles"
   And I should see "The Incredibles" before "The Help"
-  # your steps here
 

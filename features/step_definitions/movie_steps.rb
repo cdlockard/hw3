@@ -4,12 +4,9 @@ Given /the following movies exist/ do |movies_table|
   movies_table.hashes.each do |movie|
     # each returned element will be a hash whose key is the table header.
     # you should arrange to add that movie to the database here.
-    #Movie.create!(:title => movie["title"], :rating => movie["rating"], :release_date=> movie["release_date"])
-    #p @movie
-    #@movie=Movie.new(movie)
+    #Colin added 3/22:
     Movie.create(movie)
   end
-  #flunk "Unimplemented"
 end
 
 # Make sure that one string (regexp) occurs before or after another one
@@ -18,7 +15,6 @@ end
 Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
   #  ensure that that e1 occurs before e2.
   #  page.body is the entire content of the page as a string.
-  #flunk "Unimplemented"
   html_text=page.body
   assert html_text.index(e1)<html_text.index(e2)
 

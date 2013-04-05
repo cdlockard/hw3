@@ -36,4 +36,3 @@ Scenario: all ratings selected
   Given I check the following ratings:'G', 'PG', 'PG-13', 'R'
   And I press 'refresh'
   Then I should see all the movies.
-  # see assignment
